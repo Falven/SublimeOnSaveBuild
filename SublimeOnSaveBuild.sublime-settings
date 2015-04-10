@@ -1,4 +1,8 @@
 {
-    "filename_filter": "\\.(css|js|sass|less|scss)$",
-    "build_on_save": 1
+	// Match everything except .sublime-settings files.
+	"filename_filter": "(?!.sublime-settings)\\..*$",
+	// Match only .css, .js, .sass, .less, .scss.
+	// "filename_filter": "\\.(css|js|sass|less|scss)$",
+    "build_on_save": true,
+    "verbose": true
 }
