@@ -4,5 +4,5 @@
 	// Match only .css, .js, .sass, .less, .scss.
 	// "filename_filter": "\\.(css|js|sass|less|scss)$",
     "build_on_save": true,
-    "verbose": true
+    "verbose": false
 }
