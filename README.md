@@ -39,10 +39,13 @@ There are a number of configuration options available to customize the behavior 
 Do NOT edit the default SublimeOnSaveBuild settings. Your changes will be lost when SublimeOnSaveBuild is updated. ALWAYS edit the user SublimeOnSaveBuild settings by selecting `Preferences->Package Settings->SublimeOnSaveBuild->Settings - User`. 
 
 * **build_on_save**
-Set to `1` to trigger a build on save. By default, this is set to `1`. I.e., SublimeOnSaveBuild attempts to build all projects. You can change this behavior and build only specific projects by configuring the user specific setting of `build_on_save` to `0` and project specific setting to `1`.
+Set to `true` to trigger a build on save. By default, this is set to `true`. I.e., SublimeOnSaveBuild attempts to build all projects. You can change this behavior and build only specific projects by configuring the user specific setting of `build_on_save` to `false` and project specific setting to `true`.
 
 * **filename_filter**
-SublimeOnSaveBuild matches the name of the file being saved against this regular expression to determine if a build should be triggered. By default, the setting has a value of `"\\.(css|js|sass|less|scss)$"`.
+SublimeOnSaveBuild matches the name of the file being saved against this regular expression to determine if a build should be triggered. By default, the setting has a value of `"(?!.sublime-settings|.md)\\..*$",` which matches any file extensions excluding .sublime-settings or .md files.
+
+* **verbose**
+Whether to print a message whenever a save-on-build is detected. Defaults to false.
 
 Usage
 -----
