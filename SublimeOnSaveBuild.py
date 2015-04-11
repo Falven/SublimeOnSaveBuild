@@ -18,5 +18,6 @@ class SublimeOnSaveBuild(sublime_plugin.EventListener):
 
         # check if it is a project and supports building...
         if build_on_save and cur_window.project_data() and re.search(filename_filter, view.file_name()):
-            print('Save detected, running build.')
+            if verbose:
+                print('Save detected, running build.')
             cur_window.run_command('build')
