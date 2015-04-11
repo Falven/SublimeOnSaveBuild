@@ -45,7 +45,7 @@ Set to `true` to trigger a build on save. By default, this is set to `true`. I.e
 SublimeOnSaveBuild matches the name of the file being saved against this regular expression to determine if a build should be triggered. By default, the setting has a value of `"(?!.sublime-settings|.md)\\..*$",` which matches any file extensions excluding .sublime-settings or .md files.
 
 * **verbose**
-Whether to print a message whenever a save-on-build is detected. Defaults to false.
+Whether to print a message whenever a save-on-build is detected. Defaults to `false`.
 
 Usage
 -----
